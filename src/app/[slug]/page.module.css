@@ -1,0 +1,52 @@
+.map {
+  height: 50vh;
+  width: 90%;
+}
+
+.title {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: auto;
+  align-items: center;
+}
+
+.form * {
+  width: fit-content;
+}
+
+.loader .loading {
+  height: 2em;
+  width: 2em;
+  border: black solid 5px;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: rotate linear 1s infinite;
+}
+
+.loader {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 359deg;
+  }
+}
